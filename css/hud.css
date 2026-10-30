@@ -649,8 +649,18 @@ body.hud-hidden .blade-right { transform: translateX(110%); opacity: 0; pointer-
   .kinematic-bar {
     bottom: 66px;
     width: calc(100vw - 16px);
-    justify-content: space-between;
+    justify-content: flex-start;
     padding: 5px 8px;
+    overflow-x: auto;              /* scroll the extra groups instead of spilling off-screen */
+    scrollbar-width: none;
+  }
+  .kinematic-bar::-webkit-scrollbar { display: none; }
+  .kin-group { flex-shrink: 0; }
+  .kin-select { max-width: 120px; }
+  .theater-strip {               /* fade the right edge so it reads as scrollable */
+    -webkit-mask-image: linear-gradient(to right, #000 82%, transparent);
+            mask-image: linear-gradient(to right, #000 82%, transparent);
+    padding-right: 24px;
   }
 
   .mobile-sheet {
@@ -722,7 +732,8 @@ body.hud-hidden .blade-right { transform: translateX(110%); opacity: 0; pointer-
 
   .mobile-dock {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(7, 1fr);   /* 7 panels since the SOLAR tab */
+    padding-bottom: env(safe-area-inset-bottom);
     position: fixed;
     bottom: 0;
     left: 0;
@@ -743,8 +754,10 @@ body.hud-hidden .blade-right { transform: translateX(110%); opacity: 0; pointer-
     justify-content: center;
     gap: 3px;
     font-family: var(--font-mono);
-    font-size: 9.5px;
+    font-size: 8.5px;
     font-weight: 600;
+    min-width: 0;
+    letter-spacing: -0.02em;
   }
   .dock-btn.active { color: var(--cyan); }
   .dock-ico { font-size: 15px; }
@@ -772,6 +785,7 @@ body.hud-hidden .blade-right { transform: translateX(110%); opacity: 0; pointer-
 }
 
 #map.zoom-low .gate-label-text { display: none; }
+.gate-marker.gate-compact { padding: 1px 4px; font-size: 10px; text-align: center; }
 #map.zoom-low .gate-marker { padding: 2px 5px; font-size: 9px; }
 #map.zoom-low .nation-gdp-sub { display: none; }
 
