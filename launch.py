@@ -503,7 +503,9 @@ for _folder in ("css", "js", "data"):
     app.mount(f"/{_folder}", StaticFiles(directory=str(BASE_DIR / _folder)), name=_folder)
 
 
-HOST = "0.0.0.0"
+# Localhost by default: reach it remotely through Tailscale Serve, not by opening it to the LAN.
+# Set STRATCOM_HOST=0.0.0.0 only if you really want every device on your Wi-Fi to reach it.
+HOST = os.environ.get("STRATCOM_HOST", "127.0.0.1")
 
 
 def get_lan_ip() -> str:
@@ -520,7 +522,8 @@ if __name__ == "__main__":
     print("\n" + "=" * 66)
     print(" STRATCOM v4.5 // FASTAPI + SQLITE GEOPOLITICAL COMMAND ONLINE")
     print(f" -> Desktop Terminal : http://localhost:{PORT}")
-    print(f" -> Mobile Wi-Fi HUD : http://{lan_ip}:{PORT}")
+    if HOST not in ("127.0.0.1", "localhost"):
+        print(f" -> Mobile Wi-Fi HUD : http://{lan_ip}:{PORT}")
     print(f" -> Live OSINT JSON  : http://localhost:{PORT}/api/osint/live")
     print(f" -> Sol GeoJSON from : {SOL_GEO_DIR}")
     print(f" -> Sol nowcast      : {SOL_ROOT / 'reports' / 'nowcast'} (refreshed when > 6 h old)")
