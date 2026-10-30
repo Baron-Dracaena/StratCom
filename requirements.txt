@@ -1,0 +1,5 @@
+fastapi>=0.110
+uvicorn>=0.29
+pydantic>=2.0
+websockets>=12.0   # optional: only needed for the live AIS feed
+# searoute         # optional: only needed to rebuild data/sea-lanes.js via tools/build_sea_lanes.py

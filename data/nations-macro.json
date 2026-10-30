@@ -1,0 +1,3625 @@
+{
+ "generated": "2026-10-15",
+ "source": "World Bank World Development Indicators (api.worldbank.org/v2)",
+ "indicators": {
+  "gdpNominal": {
+   "code": "NY.GDP.MKTP.CD",
+   "label": "GDP, current US$ (trillions)"
+  },
+  "gdpPPP": {
+   "code": "NY.GDP.MKTP.PP.CD",
+   "label": "GDP, PPP current intl $ (trillions)"
+  },
+  "growth": {
+   "code": "NY.GDP.MKTP.KD.ZG",
+   "label": "Real GDP growth (annual %)"
+  },
+  "milBudget": {
+   "code": "MS.MIL.XPND.CD",
+   "label": "Military expenditure, current US$ (billions)"
+  },
+  "activeForces": {
+   "code": "MS.MIL.TOTL.P1",
+   "label": "Armed forces personnel, total"
+  },
+  "population": {
+   "code": "SP.POP.TOTL",
+   "label": "Population (millions)"
+  }
+ },
+ "notCovered": [
+  "TWN"
+ ],
+ "nations": {
+  "AGO": {
+   "gdpNominal": {
+    "value": 0.12217,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.40021,
+    "year": 2025
+   },
+   "growth": {
+    "value": 3.1,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 1.459,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 117000,
+    "year": 2020
+   },
+   "population": {
+    "value": 39.04,
+    "year": 2025
+   }
+  },
+  "ALB": {
+   "gdpNominal": {
+    "value": 0.03054,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.06631,
+    "year": 2025
+   },
+   "growth": {
+    "value": 3.8,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 0.624,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 8000,
+    "year": 2020
+   },
+   "population": {
+    "value": 2.35,
+    "year": 2025
+   }
+  },
+  "ARE": {
+   "gdpNominal": {
+    "value": 0.55232,
+    "year": 2024
+   },
+   "gdpPPP": {
+    "value": 0.8717,
+    "year": 2024
+   },
+   "growth": {
+    "value": 4.0,
+    "year": 2024
+   },
+   "milBudget": {
+    "value": 22.755,
+    "year": 2014
+   },
+   "activeForces": {
+    "value": 63000,
+    "year": 2020
+   },
+   "population": {
+    "value": 11.513,
+    "year": 2025
+   }
+  },
+  "ARG": {
+   "gdpNominal": {
+    "value": 0.6831,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 1.49414,
+    "year": 2025
+   },
+   "growth": {
+    "value": 4.4,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 3.876,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 103000,
+    "year": 2020
+   },
+   "population": {
+    "value": 45.851,
+    "year": 2025
+   }
+  },
+  "ARM": {
+   "gdpNominal": {
+    "value": 0.02924,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.07641,
+    "year": 2025
+   },
+   "growth": {
+    "value": 7.2,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 1.725,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 47000,
+    "year": 2020
+   },
+   "population": {
+    "value": 3.087,
+    "year": 2025
+   }
+  },
+  "AUS": {
+   "gdpNominal": {
+    "value": 1.79852,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 1.98643,
+    "year": 2025
+   },
+   "growth": {
+    "value": 1.4,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 35.327,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 60000,
+    "year": 2020
+   },
+   "population": {
+    "value": 27.614,
+    "year": 2025
+   }
+  },
+  "AUT": {
+   "gdpNominal": {
+    "value": 0.57947,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.70698,
+    "year": 2025
+   },
+   "growth": {
+    "value": 0.6,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 6.353,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 23000,
+    "year": 2020
+   },
+   "population": {
+    "value": 9.208,
+    "year": 2025
+   }
+  },
+  "BDI": {
+   "gdpNominal": {
+    "value": 0.00336,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.01796,
+    "year": 2025
+   },
+   "growth": {
+    "value": 4.2,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 0.227,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 31000,
+    "year": 2020
+   },
+   "population": {
+    "value": 14.39,
+    "year": 2025
+   }
+  },
+  "BEL": {
+   "gdpNominal": {
+    "value": 0.72547,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.89176,
+    "year": 2025
+   },
+   "growth": {
+    "value": 1.0,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 14.532,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 24000,
+    "year": 2020
+   },
+   "population": {
+    "value": 11.942,
+    "year": 2025
+   }
+  },
+  "BEN": {
+   "gdpNominal": {
+    "value": 0.02457,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.07136,
+    "year": 2025
+   },
+   "growth": {
+    "value": 8.1,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 0.217,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 12000,
+    "year": 2020
+   },
+   "population": {
+    "value": 14.814,
+    "year": 2025
+   }
+  },
+  "BFA": {
+   "gdpNominal": {
+    "value": 0.02763,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.07395,
+    "year": 2025
+   },
+   "growth": {
+    "value": 5.3,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 0.892,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 11000,
+    "year": 2020
+   },
+   "population": {
+    "value": 24.075,
+    "year": 2025
+   }
+  },
+  "BGD": {
+   "gdpNominal": {
+    "value": 0.45632,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 1.78387,
+    "year": 2025
+   },
+   "growth": {
+    "value": 3.5,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 3.827,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 227000,
+    "year": 2020
+   },
+   "population": {
+    "value": 175.687,
+    "year": 2025
+   }
+  },
+  "BGR": {
+   "gdpNominal": {
+    "value": 0.13078,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.28597,
+    "year": 2025
+   },
+   "growth": {
+    "value": 3.1,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 2.589,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 37000,
+    "year": 2020
+   },
+   "population": {
+    "value": 6.433,
+    "year": 2025
+   }
+  },
+  "BHR": {
+   "gdpNominal": {
+    "value": 0.04897,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.11362,
+    "year": 2025
+   },
+   "growth": {
+    "value": 3.5,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 1.468,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 19000,
+    "year": 2020
+   },
+   "population": {
+    "value": 1.6,
+    "year": 2025
+   }
+  },
+  "BLR": {
+   "gdpNominal": {
+    "value": 0.0934,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.31543,
+    "year": 2025
+   },
+   "growth": {
+    "value": 1.3,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 1.939,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 158000,
+    "year": 2020
+   },
+   "population": {
+    "value": 9.086,
+    "year": 2025
+   }
+  },
+  "BOL": {
+   "gdpNominal": {
+    "value": 0.06477,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.16197,
+    "year": 2025
+   },
+   "growth": {
+    "value": -1.6,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 0.688,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 71000,
+    "year": 2020
+   },
+   "population": {
+    "value": 12.582,
+    "year": 2025
+   }
+  },
+  "BRA": {
+   "gdpNominal": {
+    "value": 2.27992,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 4.98689,
+    "year": 2025
+   },
+   "growth": {
+    "value": 2.3,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 23.95,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 762000,
+    "year": 2020
+   },
+   "population": {
+    "value": 212.812,
+    "year": 2025
+   }
+  },
+  "BRN": {
+   "gdpNominal": {
+    "value": 0.01503,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.0431,
+    "year": 2025
+   },
+   "growth": {
+    "value": 0.7,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 0.56,
+    "year": 2024
+   },
+   "activeForces": {
+    "value": 8000,
+    "year": 2020
+   },
+   "population": {
+    "value": 0.466,
+    "year": 2025
+   }
+  },
+  "BWA": {
+   "gdpNominal": {
+    "value": 0.01993,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.05303,
+    "year": 2025
+   },
+   "growth": {
+    "value": -0.7,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 0.614,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 9000,
+    "year": 2020
+   },
+   "population": {
+    "value": 2.562,
+    "year": 2025
+   }
+  },
+  "CAF": {
+   "gdpNominal": {
+    "value": 0.00307,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.00724,
+    "year": 2025
+   },
+   "growth": {
+    "value": 4.5,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 0.074,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 10000,
+    "year": 2020
+   },
+   "population": {
+    "value": 5.513,
+    "year": 2025
+   }
+  },
+  "CAN": {
+   "gdpNominal": {
+    "value": 2.3199,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 2.78007,
+    "year": 2025
+   },
+   "growth": {
+    "value": 1.7,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 37.494,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 72000,
+    "year": 2020
+   },
+   "population": {
+    "value": 41.652,
+    "year": 2025
+   }
+  },
+  "CHL": {
+   "gdpNominal": {
+    "value": 0.35737,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.75019,
+    "year": 2025
+   },
+   "growth": {
+    "value": 2.5,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 5.328,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 114000,
+    "year": 2020
+   },
+   "population": {
+    "value": 19.86,
+    "year": 2025
+   }
+  },
+  "CHN": {
+   "gdpNominal": {
+    "value": 19.49804,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 41.25982,
+    "year": 2025
+   },
+   "growth": {
+    "value": 5.0,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 335.524,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 2535000,
+    "year": 2020
+   },
+   "population": {
+    "value": 1406.585,
+    "year": 2025
+   }
+  },
+  "CIV": {
+   "gdpNominal": {
+    "value": 0.09977,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.26853,
+    "year": 2025
+   },
+   "growth": {
+    "value": 6.5,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 0.759,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 27000,
+    "year": 2020
+   },
+   "population": {
+    "value": 32.712,
+    "year": 2025
+   }
+  },
+  "CMR": {
+   "gdpNominal": {
+    "value": 0.05893,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.17294,
+    "year": 2025
+   },
+   "growth": {
+    "value": 3.2,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 0.627,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 34000,
+    "year": 2020
+   },
+   "population": {
+    "value": 29.879,
+    "year": 2025
+   }
+  },
+  "COD": {
+   "gdpNominal": {
+    "value": 0.09103,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.21662,
+    "year": 2025
+   },
+   "growth": {
+    "value": 5.8,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 1.225,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 134000,
+    "year": 2020
+   },
+   "population": {
+    "value": 112.832,
+    "year": 2025
+   }
+  },
+  "COG": {
+   "gdpNominal": {
+    "value": 0.01631,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.047,
+    "year": 2025
+   },
+   "growth": {
+    "value": 3.1,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 0.205,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 12000,
+    "year": 2020
+   },
+   "population": {
+    "value": 6.484,
+    "year": 2025
+   }
+  },
+  "COL": {
+   "gdpNominal": {
+    "value": 0.45741,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 1.20958,
+    "year": 2025
+   },
+   "growth": {
+    "value": 2.6,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 14.503,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 428000,
+    "year": 2020
+   },
+   "population": {
+    "value": 53.426,
+    "year": 2025
+   }
+  },
+  "COM": {
+   "gdpNominal": {
+    "value": 0.00181,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.00374,
+    "year": 2025
+   },
+   "growth": {
+    "value": 3.8,
+    "year": 2025
+   },
+   "population": {
+    "value": 0.883,
+    "year": 2025
+   }
+  },
+  "CPV": {
+   "gdpNominal": {
+    "value": 0.00306,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.00642,
+    "year": 2025
+   },
+   "growth": {
+    "value": 6.3,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 0.02,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 1000,
+    "year": 2020
+   },
+   "population": {
+    "value": 0.527,
+    "year": 2025
+   }
+  },
+  "CUB": {
+   "gdpNominal": {
+    "value": 0.10735,
+    "year": 2020
+   },
+   "growth": {
+    "value": -1.1,
+    "year": 2024
+   },
+   "milBudget": {
+    "value": 0.129,
+    "year": 2018
+   },
+   "activeForces": {
+    "value": 76000,
+    "year": 2020
+   },
+   "population": {
+    "value": 10.937,
+    "year": 2025
+   }
+  },
+  "CYP": {
+   "gdpNominal": {
+    "value": 0.04123,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.06371,
+    "year": 2025
+   },
+   "growth": {
+    "value": 3.8,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 0.663,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 13000,
+    "year": 2020
+   },
+   "population": {
+    "value": 1.371,
+    "year": 2025
+   }
+  },
+  "CZE": {
+   "gdpNominal": {
+    "value": 0.39103,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.65852,
+    "year": 2025
+   },
+   "growth": {
+    "value": 2.6,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 7.051,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 27000,
+    "year": 2020
+   },
+   "population": {
+    "value": 10.887,
+    "year": 2025
+   }
+  },
+  "DEU": {
+   "gdpNominal": {
+    "value": 5.05092,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 6.2958,
+    "year": 2025
+   },
+   "growth": {
+    "value": 0.2,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 113.586,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 183000,
+    "year": 2020
+   },
+   "population": {
+    "value": 83.491,
+    "year": 2025
+   }
+  },
+  "DJI": {
+   "gdpNominal": {
+    "value": 0.00462,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.01001,
+    "year": 2025
+   },
+   "growth": {
+    "value": 6.5,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 0.036,
+    "year": 2008
+   },
+   "activeForces": {
+    "value": 13000,
+    "year": 2020
+   },
+   "population": {
+    "value": 1.184,
+    "year": 2025
+   }
+  },
+  "DNK": {
+   "gdpNominal": {
+    "value": 0.46253,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.50007,
+    "year": 2025
+   },
+   "growth": {
+    "value": 2.9,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 14.949,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 15000,
+    "year": 2020
+   },
+   "population": {
+    "value": 6.009,
+    "year": 2025
+   }
+  },
+  "DZA": {
+   "gdpNominal": {
+    "value": 0.28703,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.88165,
+    "year": 2025
+   },
+   "growth": {
+    "value": 3.8,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 25.439,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 326000,
+    "year": 2020
+   },
+   "population": {
+    "value": 47.435,
+    "year": 2025
+   }
+  },
+  "ECU": {
+   "gdpNominal": {
+    "value": 0.13032,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.30648,
+    "year": 2025
+   },
+   "growth": {
+    "value": 3.7,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 2.736,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 42000,
+    "year": 2020
+   },
+   "population": {
+    "value": 18.29,
+    "year": 2025
+   }
+  },
+  "EGY": {
+   "gdpNominal": {
+    "value": 0.36525,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 2.39147,
+    "year": 2025
+   },
+   "growth": {
+    "value": 4.4,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 2.502,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 836000,
+    "year": 2020
+   },
+   "population": {
+    "value": 118.366,
+    "year": 2025
+   }
+  },
+  "ESP": {
+   "gdpNominal": {
+    "value": 1.90645,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 2.95478,
+    "year": 2025
+   },
+   "growth": {
+    "value": 2.8,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 40.212,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 199000,
+    "year": 2020
+   },
+   "population": {
+    "value": 49.355,
+    "year": 2025
+   }
+  },
+  "EST": {
+   "gdpNominal": {
+    "value": 0.04703,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.0712,
+    "year": 2025
+   },
+   "growth": {
+    "value": 0.6,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 1.576,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 7000,
+    "year": 2020
+   },
+   "population": {
+    "value": 1.366,
+    "year": 2025
+   }
+  },
+  "ETH": {
+   "gdpNominal": {
+    "value": 0.12636,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.49064,
+    "year": 2025
+   },
+   "growth": {
+    "value": 9.8,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 0.528,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 138000,
+    "year": 2020
+   },
+   "population": {
+    "value": 135.472,
+    "year": 2025
+   }
+  },
+  "FIN": {
+   "gdpNominal": {
+    "value": 0.31704,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.37201,
+    "year": 2025
+   },
+   "growth": {
+    "value": 0.2,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 8.082,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 22000,
+    "year": 2020
+   },
+   "population": {
+    "value": 5.646,
+    "year": 2025
+   }
+  },
+  "FRA": {
+   "gdpNominal": {
+    "value": 3.36632,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 4.39641,
+    "year": 2025
+   },
+   "growth": {
+    "value": 0.8,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 68.008,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 304000,
+    "year": 2020
+   },
+   "population": {
+    "value": 68.72,
+    "year": 2025
+   }
+  },
+  "GAB": {
+   "gdpNominal": {
+    "value": 0.02143,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.05762,
+    "year": 2025
+   },
+   "growth": {
+    "value": 2.5,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 0.356,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 7000,
+    "year": 2020
+   },
+   "population": {
+    "value": 2.593,
+    "year": 2025
+   }
+  },
+  "GBR": {
+   "gdpNominal": {
+    "value": 4.00259,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 4.48931,
+    "year": 2025
+   },
+   "growth": {
+    "value": 1.4,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 88.977,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 153000,
+    "year": 2020
+   },
+   "population": {
+    "value": 69.487,
+    "year": 2025
+   }
+  },
+  "GHA": {
+   "gdpNominal": {
+    "value": 0.11421,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.30191,
+    "year": 2025
+   },
+   "growth": {
+    "value": 6.0,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 0.507,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 16000,
+    "year": 2020
+   },
+   "population": {
+    "value": 35.064,
+    "year": 2025
+   }
+  },
+  "GIN": {
+   "gdpNominal": {
+    "value": 0.02835,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.07451,
+    "year": 2025
+   },
+   "growth": {
+    "value": 7.4,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 0.601,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 13000,
+    "year": 2020
+   },
+   "population": {
+    "value": 15.1,
+    "year": 2025
+   }
+  },
+  "GMB": {
+   "gdpNominal": {
+    "value": 0.00259,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.01046,
+    "year": 2025
+   },
+   "growth": {
+    "value": 5.9,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 0.015,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 4000,
+    "year": 2020
+   },
+   "population": {
+    "value": 2.822,
+    "year": 2025
+   }
+  },
+  "GNB": {
+   "gdpNominal": {
+    "value": 0.00253,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.00741,
+    "year": 2025
+   },
+   "growth": {
+    "value": 5.8,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 0.022,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 4000,
+    "year": 2020
+   },
+   "population": {
+    "value": 2.25,
+    "year": 2025
+   }
+  },
+  "GNQ": {
+   "gdpNominal": {
+    "value": 0.01282,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.03127,
+    "year": 2025
+   },
+   "growth": {
+    "value": -5.8,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 0.121,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 1000,
+    "year": 2020
+   },
+   "population": {
+    "value": 1.938,
+    "year": 2025
+   }
+  },
+  "GRC": {
+   "gdpNominal": {
+    "value": 0.28064,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.47137,
+    "year": 2025
+   },
+   "growth": {
+    "value": 2.1,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 8.388,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 147000,
+    "year": 2020
+   },
+   "population": {
+    "value": 10.414,
+    "year": 2025
+   }
+  },
+  "HKG": {
+   "gdpNominal": {
+    "value": 0.42731,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.60308,
+    "year": 2025
+   },
+   "growth": {
+    "value": 3.5,
+    "year": 2025
+   },
+   "population": {
+    "value": 7.499,
+    "year": 2025
+   }
+  },
+  "HRV": {
+   "gdpNominal": {
+    "value": 0.10506,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.19748,
+    "year": 2025
+   },
+   "growth": {
+    "value": 3.4,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 2.102,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 20000,
+    "year": 2020
+   },
+   "population": {
+    "value": 3.876,
+    "year": 2025
+   }
+  },
+  "HUN": {
+   "gdpNominal": {
+    "value": 0.24649,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.47417,
+    "year": 2025
+   },
+   "growth": {
+    "value": 0.5,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 5.002,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 46000,
+    "year": 2020
+   },
+   "population": {
+    "value": 9.514,
+    "year": 2025
+   }
+  },
+  "IDN": {
+   "gdpNominal": {
+    "value": 1.44564,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 5.04578,
+    "year": 2025
+   },
+   "growth": {
+    "value": 5.1,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 15.025,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 676000,
+    "year": 2020
+   },
+   "population": {
+    "value": 285.721,
+    "year": 2025
+   }
+  },
+  "IND": {
+   "gdpNominal": {
+    "value": 3.95607,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 17.19737,
+    "year": 2025
+   },
+   "growth": {
+    "value": 7.6,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 92.057,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 3068000,
+    "year": 2020
+   },
+   "population": {
+    "value": 1463.866,
+    "year": 2025
+   }
+  },
+  "IRL": {
+   "gdpNominal": {
+    "value": 0.7217,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.85057,
+    "year": 2025
+   },
+   "growth": {
+    "value": 12.3,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 1.551,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 9000,
+    "year": 2020
+   },
+   "population": {
+    "value": 5.484,
+    "year": 2025
+   }
+  },
+  "IRN": {
+   "gdpNominal": {
+    "value": 0.36268,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 1.82056,
+    "year": 2025
+   },
+   "growth": {
+    "value": -2.8,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 7.396,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 650000,
+    "year": 2020
+   },
+   "population": {
+    "value": 92.418,
+    "year": 2025
+   }
+  },
+  "IRQ": {
+   "gdpNominal": {
+    "value": 0.25437,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.67084,
+    "year": 2025
+   },
+   "growth": {
+    "value": -2.2,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 6.448,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 459000,
+    "year": 2020
+   },
+   "population": {
+    "value": 47.021,
+    "year": 2025
+   }
+  },
+  "ISL": {
+   "gdpNominal": {
+    "value": 0.03858,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.03274,
+    "year": 2025
+   },
+   "growth": {
+    "value": 1.3,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 0.0,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 0,
+    "year": 2020
+   },
+   "population": {
+    "value": 0.392,
+    "year": 2025
+   }
+  },
+  "ISR": {
+   "gdpNominal": {
+    "value": 0.61078,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.6045,
+    "year": 2025
+   },
+   "growth": {
+    "value": 2.9,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 48.281,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 178000,
+    "year": 2020
+   },
+   "population": {
+    "value": 10.123,
+    "year": 2025
+   }
+  },
+  "ITA": {
+   "gdpNominal": {
+    "value": 2.55156,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 3.70005,
+    "year": 2025
+   },
+   "growth": {
+    "value": 0.5,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 48.144,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 338000,
+    "year": 2020
+   },
+   "population": {
+    "value": 58.916,
+    "year": 2025
+   }
+  },
+  "JPN": {
+   "gdpNominal": {
+    "value": 4.43516,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 6.83722,
+    "year": 2025
+   },
+   "growth": {
+    "value": 1.2,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 62.158,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 261000,
+    "year": 2020
+   },
+   "population": {
+    "value": 123.367,
+    "year": 2025
+   }
+  },
+  "KAZ": {
+   "gdpNominal": {
+    "value": 0.30624,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.92324,
+    "year": 2025
+   },
+   "growth": {
+    "value": 6.5,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 1.309,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 71000,
+    "year": 2020
+   },
+   "population": {
+    "value": 20.844,
+    "year": 2025
+   }
+  },
+  "KEN": {
+   "gdpNominal": {
+    "value": 0.13594,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.40364,
+    "year": 2025
+   },
+   "growth": {
+    "value": 4.6,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 1.47,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 24000,
+    "year": 2020
+   },
+   "population": {
+    "value": 57.532,
+    "year": 2025
+   }
+  },
+  "KGZ": {
+   "gdpNominal": {
+    "value": 0.02262,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.0677,
+    "year": 2025
+   },
+   "growth": {
+    "value": 11.1,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 0.601,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 21000,
+    "year": 2020
+   },
+   "population": {
+    "value": 7.343,
+    "year": 2025
+   }
+  },
+  "KHM": {
+   "gdpNominal": {
+    "value": 0.05127,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.15247,
+    "year": 2025
+   },
+   "growth": {
+    "value": 5.3,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 0.739,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 191000,
+    "year": 2020
+   },
+   "population": {
+    "value": 17.848,
+    "year": 2025
+   }
+  },
+  "KOR": {
+   "gdpNominal": {
+    "value": 1.87237,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 3.26258,
+    "year": 2025
+   },
+   "growth": {
+    "value": 1.0,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 47.771,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 569000,
+    "year": 2020
+   },
+   "population": {
+    "value": 51.685,
+    "year": 2025
+   }
+  },
+  "KWT": {
+   "gdpNominal": {
+    "value": 0.15721,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.27473,
+    "year": 2025
+   },
+   "growth": {
+    "value": 2.7,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 8.088,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 25000,
+    "year": 2020
+   },
+   "population": {
+    "value": 4.865,
+    "year": 2025
+   }
+  },
+  "LAO": {
+   "gdpNominal": {
+    "value": 0.0183,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.08175,
+    "year": 2025
+   },
+   "growth": {
+    "value": 4.5,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 0.023,
+    "year": 2013
+   },
+   "activeForces": {
+    "value": 129000,
+    "year": 2020
+   },
+   "population": {
+    "value": 7.873,
+    "year": 2025
+   }
+  },
+  "LBR": {
+   "gdpNominal": {
+    "value": 0.00525,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.01135,
+    "year": 2025
+   },
+   "growth": {
+    "value": 5.0,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 0.044,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 2000,
+    "year": 2020
+   },
+   "population": {
+    "value": 5.731,
+    "year": 2025
+   }
+  },
+  "LBY": {
+   "gdpNominal": {
+    "value": 0.0481,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.12323,
+    "year": 2025
+   },
+   "growth": {
+    "value": 13.4,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 1.573,
+    "year": 2023
+   },
+   "activeForces": {
+    "value": 0,
+    "year": 2020
+   },
+   "population": {
+    "value": 7.459,
+    "year": 2025
+   }
+  },
+  "LSO": {
+   "gdpNominal": {
+    "value": 0.00257,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.00753,
+    "year": 2025
+   },
+   "growth": {
+    "value": 2.0,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 0.04,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 2000,
+    "year": 2020
+   },
+   "population": {
+    "value": 2.363,
+    "year": 2025
+   }
+  },
+  "LTU": {
+   "gdpNominal": {
+    "value": 0.09521,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.16419,
+    "year": 2025
+   },
+   "growth": {
+    "value": 2.9,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 2.952,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 37000,
+    "year": 2020
+   },
+   "population": {
+    "value": 2.889,
+    "year": 2025
+   }
+  },
+  "LUX": {
+   "gdpNominal": {
+    "value": 0.10116,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.10754,
+    "year": 2025
+   },
+   "growth": {
+    "value": 0.6,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 0.855,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 1000,
+    "year": 2020
+   },
+   "population": {
+    "value": 0.687,
+    "year": 2025
+   }
+  },
+  "LVA": {
+   "gdpNominal": {
+    "value": 0.04862,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.08525,
+    "year": 2025
+   },
+   "growth": {
+    "value": 2.1,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 1.732,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 9000,
+    "year": 2020
+   },
+   "population": {
+    "value": 1.848,
+    "year": 2025
+   }
+  },
+  "MAR": {
+   "gdpNominal": {
+    "value": 0.18237,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.43371,
+    "year": 2025
+   },
+   "growth": {
+    "value": 4.6,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 6.331,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 246000,
+    "year": 2020
+   },
+   "population": {
+    "value": 38.431,
+    "year": 2025
+   }
+  },
+  "MDG": {
+   "gdpNominal": {
+    "value": 0.01962,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.06393,
+    "year": 2025
+   },
+   "growth": {
+    "value": 3.0,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 0.12,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 22000,
+    "year": 2020
+   },
+   "population": {
+    "value": 32.741,
+    "year": 2025
+   }
+  },
+  "MEX": {
+   "gdpNominal": {
+    "value": 1.83264,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 3.41327,
+    "year": 2025
+   },
+   "growth": {
+    "value": 0.6,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 13.648,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 341000,
+    "year": 2020
+   },
+   "population": {
+    "value": 131.947,
+    "year": 2025
+   }
+  },
+  "MKD": {
+   "gdpNominal": {
+    "value": 0.0191,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.05104,
+    "year": 2025
+   },
+   "growth": {
+    "value": 3.5,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 0.375,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 16000,
+    "year": 2020
+   },
+   "population": {
+    "value": 1.821,
+    "year": 2025
+   }
+  },
+  "MLI": {
+   "gdpNominal": {
+    "value": 0.03007,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.08827,
+    "year": 2025
+   },
+   "growth": {
+    "value": 5.6,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 0.953,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 41000,
+    "year": 2020
+   },
+   "population": {
+    "value": 25.199,
+    "year": 2025
+   }
+  },
+  "MLT": {
+   "gdpNominal": {
+    "value": 0.02777,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.04186,
+    "year": 2025
+   },
+   "growth": {
+    "value": 4.0,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 0.125,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 2000,
+    "year": 2020
+   },
+   "population": {
+    "value": 0.58,
+    "year": 2025
+   }
+  },
+  "MMR": {
+   "gdpNominal": {
+    "value": 0.08167,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.32974,
+    "year": 2025
+   },
+   "growth": {
+    "value": -2.0,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 5.011,
+    "year": 2024
+   },
+   "activeForces": {
+    "value": 463000,
+    "year": 2020
+   },
+   "population": {
+    "value": 54.851,
+    "year": 2025
+   }
+  },
+  "MNE": {
+   "gdpNominal": {
+    "value": 0.00923,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.02207,
+    "year": 2025
+   },
+   "growth": {
+    "value": 2.7,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 0.177,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 12000,
+    "year": 2020
+   },
+   "population": {
+    "value": 0.623,
+    "year": 2025
+   }
+  },
+  "MOZ": {
+   "gdpNominal": {
+    "value": 0.02234,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.0605,
+    "year": 2025
+   },
+   "growth": {
+    "value": -0.5,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 0.468,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 11000,
+    "year": 2020
+   },
+   "population": {
+    "value": 35.632,
+    "year": 2025
+   }
+  },
+  "MRT": {
+   "gdpNominal": {
+    "value": 0.01168,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.0408,
+    "year": 2025
+   },
+   "growth": {
+    "value": 4.0,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 0.322,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 21000,
+    "year": 2020
+   },
+   "population": {
+    "value": 5.315,
+    "year": 2025
+   }
+  },
+  "MUS": {
+   "gdpNominal": {
+    "value": 0.01616,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.04187,
+    "year": 2025
+   },
+   "growth": {
+    "value": 3.2,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 0.024,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 3000,
+    "year": 2020
+   },
+   "population": {
+    "value": 1.244,
+    "year": 2025
+   }
+  },
+  "MWI": {
+   "gdpNominal": {
+    "value": 0.01492,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.04219,
+    "year": 2025
+   },
+   "growth": {
+    "value": 1.9,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 0.163,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 15000,
+    "year": 2020
+   },
+   "population": {
+    "value": 22.216,
+    "year": 2025
+   }
+  },
+  "MYS": {
+   "gdpNominal": {
+    "value": 0.47219,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 1.493,
+    "year": 2025
+   },
+   "growth": {
+    "value": 5.2,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 4.933,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 136000,
+    "year": 2020
+   },
+   "population": {
+    "value": 35.978,
+    "year": 2025
+   }
+  },
+  "NAM": {
+   "gdpNominal": {
+    "value": 0.01508,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.03707,
+    "year": 2025
+   },
+   "growth": {
+    "value": 1.7,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 0.411,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 16000,
+    "year": 2020
+   },
+   "population": {
+    "value": 3.093,
+    "year": 2025
+   }
+  },
+  "NER": {
+   "gdpNominal": {
+    "value": 0.02165,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.06078,
+    "year": 2025
+   },
+   "growth": {
+    "value": 7.0,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 0.489,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 10000,
+    "year": 2020
+   },
+   "population": {
+    "value": 27.918,
+    "year": 2025
+   }
+  },
+  "NGA": {
+   "gdpNominal": {
+    "value": 0.29079,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 2.26402,
+    "year": 2025
+   },
+   "growth": {
+    "value": 4.0,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 2.102,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 223000,
+    "year": 2020
+   },
+   "population": {
+    "value": 237.528,
+    "year": 2025
+   }
+  },
+  "NLD": {
+   "gdpNominal": {
+    "value": 1.33277,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 1.57941,
+    "year": 2025
+   },
+   "growth": {
+    "value": 1.8,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 28.944,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 41000,
+    "year": 2020
+   },
+   "population": {
+    "value": 18.088,
+    "year": 2025
+   }
+  },
+  "NOR": {
+   "gdpNominal": {
+    "value": 0.53076,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.58378,
+    "year": 2025
+   },
+   "growth": {
+    "value": 1.1,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 17.034,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 25000,
+    "year": 2020
+   },
+   "population": {
+    "value": 5.611,
+    "year": 2025
+   }
+  },
+  "NZL": {
+   "gdpNominal": {
+    "value": 0.26406,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.30537,
+    "year": 2025
+   },
+   "growth": {
+    "value": 0.5,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 2.856,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 10000,
+    "year": 2020
+   },
+   "population": {
+    "value": 5.325,
+    "year": 2025
+   }
+  },
+  "OMN": {
+   "gdpNominal": {
+    "value": 0.1096,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.2324,
+    "year": 2025
+   },
+   "growth": {
+    "value": 2.4,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 5.988,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 47000,
+    "year": 2020
+   },
+   "population": {
+    "value": 5.495,
+    "year": 2025
+   }
+  },
+  "PAK": {
+   "gdpNominal": {
+    "value": 0.40731,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 1.67766,
+    "year": 2025
+   },
+   "growth": {
+    "value": 3.7,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 11.871,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 943000,
+    "year": 2020
+   },
+   "population": {
+    "value": 255.22,
+    "year": 2025
+   }
+  },
+  "PER": {
+   "gdpNominal": {
+    "value": 0.33485,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.6506,
+    "year": 2025
+   },
+   "growth": {
+    "value": 3.4,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 2.596,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 158000,
+    "year": 2020
+   },
+   "population": {
+    "value": 34.577,
+    "year": 2025
+   }
+  },
+  "PHL": {
+   "gdpNominal": {
+    "value": 0.48709,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 1.46883,
+    "year": 2025
+   },
+   "growth": {
+    "value": 4.4,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 6.379,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 157000,
+    "year": 2020
+   },
+   "population": {
+    "value": 116.787,
+    "year": 2025
+   }
+  },
+  "PNG": {
+   "gdpNominal": {
+    "value": 0.0325,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.05613,
+    "year": 2025
+   },
+   "growth": {
+    "value": 5.6,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 0.106,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 4000,
+    "year": 2020
+   },
+   "population": {
+    "value": 10.763,
+    "year": 2025
+   }
+  },
+  "POL": {
+   "gdpNominal": {
+    "value": 1.03549,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 1.9771,
+    "year": 2025
+   },
+   "growth": {
+    "value": 3.6,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 46.76,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 189000,
+    "year": 2020
+   },
+   "population": {
+    "value": 36.436,
+    "year": 2025
+   }
+  },
+  "PRT": {
+   "gdpNominal": {
+    "value": 0.34664,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.57423,
+    "year": 2025
+   },
+   "growth": {
+    "value": 1.9,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 5.861,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 52000,
+    "year": 2020
+   },
+   "population": {
+    "value": 10.805,
+    "year": 2025
+   }
+  },
+  "PRY": {
+   "gdpNominal": {
+    "value": 0.04928,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.14153,
+    "year": 2025
+   },
+   "growth": {
+    "value": 6.6,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 0.421,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 29000,
+    "year": 2020
+   },
+   "population": {
+    "value": 7.013,
+    "year": 2025
+   }
+  },
+  "QAT": {
+   "gdpNominal": {
+    "value": 0.21556,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.38307,
+    "year": 2025
+   },
+   "growth": {
+    "value": 2.9,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 15.412,
+    "year": 2022
+   },
+   "activeForces": {
+    "value": 22000,
+    "year": 2020
+   },
+   "population": {
+    "value": 2.972,
+    "year": 2025
+   }
+  },
+  "ROU": {
+   "gdpNominal": {
+    "value": 0.42868,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.96804,
+    "year": 2025
+   },
+   "growth": {
+    "value": 0.7,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 9.725,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 128000,
+    "year": 2020
+   },
+   "population": {
+    "value": 19.02,
+    "year": 2025
+   }
+  },
+  "RUS": {
+   "gdpNominal": {
+    "value": 2.56131,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 7.23555,
+    "year": 2025
+   },
+   "growth": {
+    "value": 1.0,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 190.417,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 1454000,
+    "year": 2020
+   },
+   "population": {
+    "value": 143.513,
+    "year": 2025
+   }
+  },
+  "RWA": {
+   "gdpNominal": {
+    "value": 0.01637,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.06067,
+    "year": 2025
+   },
+   "growth": {
+    "value": 9.4,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 0.191,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 35000,
+    "year": 2020
+   },
+   "population": {
+    "value": 14.569,
+    "year": 2025
+   }
+  },
+  "SAU": {
+   "gdpNominal": {
+    "value": 1.27694,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 2.72804,
+    "year": 2025
+   },
+   "growth": {
+    "value": 4.5,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 83.181,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 282000,
+    "year": 2020
+   },
+   "population": {
+    "value": 36.974,
+    "year": 2025
+   }
+  },
+  "SDN": {
+   "gdpNominal": {
+    "value": 0.06016,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.11326,
+    "year": 2025
+   },
+   "growth": {
+    "value": 3.1,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 0.369,
+    "year": 2021
+   },
+   "activeForces": {
+    "value": 144000,
+    "year": 2020
+   },
+   "population": {
+    "value": 51.662,
+    "year": 2025
+   }
+  },
+  "SEN": {
+   "gdpNominal": {
+    "value": 0.03701,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.10343,
+    "year": 2025
+   },
+   "growth": {
+    "value": 6.7,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 0.567,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 19000,
+    "year": 2020
+   },
+   "population": {
+    "value": 18.932,
+    "year": 2025
+   }
+  },
+  "SGP": {
+   "gdpNominal": {
+    "value": 0.60387,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.99828,
+    "year": 2025
+   },
+   "growth": {
+    "value": 5.0,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 17.438,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 59000,
+    "year": 2020
+   },
+   "population": {
+    "value": 6.111,
+    "year": 2025
+   }
+  },
+  "SLE": {
+   "gdpNominal": {
+    "value": 0.00746,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.03278,
+    "year": 2025
+   },
+   "growth": {
+    "value": 4.6,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 0.032,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 9000,
+    "year": 2020
+   },
+   "population": {
+    "value": 8.82,
+    "year": 2025
+   }
+  },
+  "SOM": {
+   "gdpNominal": {
+    "value": 0.013,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.03229,
+    "year": 2025
+   },
+   "growth": {
+    "value": 3.0,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 0.199,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 14000,
+    "year": 2020
+   },
+   "population": {
+    "value": 19.655,
+    "year": 2025
+   }
+  },
+  "SSD": {
+   "gdpNominal": {
+    "value": 0.012,
+    "year": 2015
+   },
+   "gdpPPP": {
+    "value": 0.01283,
+    "year": 2015
+   },
+   "growth": {
+    "value": -10.8,
+    "year": 2015
+   },
+   "milBudget": {
+    "value": 0.178,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 53000,
+    "year": 2020
+   },
+   "population": {
+    "value": 12.189,
+    "year": 2025
+   }
+  },
+  "STP": {
+   "gdpNominal": {
+    "value": 0.00098,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.00153,
+    "year": 2025
+   },
+   "growth": {
+    "value": 1.0,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 1000,
+    "year": 1999
+   },
+   "population": {
+    "value": 0.24,
+    "year": 2025
+   }
+  },
+  "SVK": {
+   "gdpNominal": {
+    "value": 0.15453,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.26695,
+    "year": 2025
+   },
+   "growth": {
+    "value": 0.8,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 3.118,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 18000,
+    "year": 2020
+   },
+   "population": {
+    "value": 5.414,
+    "year": 2025
+   }
+  },
+  "SVN": {
+   "gdpNominal": {
+    "value": 0.07965,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.12625,
+    "year": 2025
+   },
+   "growth": {
+    "value": 1.1,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 1.222,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 7000,
+    "year": 2020
+   },
+   "population": {
+    "value": 2.131,
+    "year": 2025
+   }
+  },
+  "SWE": {
+   "gdpNominal": {
+    "value": 0.669,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.76856,
+    "year": 2025
+   },
+   "growth": {
+    "value": 1.5,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 16.473,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 15000,
+    "year": 2020
+   },
+   "population": {
+    "value": 10.597,
+    "year": 2025
+   }
+  },
+  "SWZ": {
+   "gdpNominal": {
+    "value": 0.00516,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.01574,
+    "year": 2025
+   },
+   "growth": {
+    "value": 4.2,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 0.093,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 3000,
+    "year": 1999
+   },
+   "population": {
+    "value": 1.256,
+    "year": 2025
+   }
+  },
+  "SYC": {
+   "gdpNominal": {
+    "value": 0.00239,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.0044,
+    "year": 2025
+   },
+   "growth": {
+    "value": 5.8,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 0.028,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 0,
+    "year": 2020
+   },
+   "population": {
+    "value": 0.123,
+    "year": 2025
+   }
+  },
+  "TCD": {
+   "gdpNominal": {
+    "value": 0.02147,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.06097,
+    "year": 2025
+   },
+   "growth": {
+    "value": 5.6,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 0.649,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 45000,
+    "year": 2020
+   },
+   "population": {
+    "value": 21.004,
+    "year": 2025
+   }
+  },
+  "TGO": {
+   "gdpNominal": {
+    "value": 0.01189,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.03505,
+    "year": 2025
+   },
+   "growth": {
+    "value": 6.3,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 0.205,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 10000,
+    "year": 2020
+   },
+   "population": {
+    "value": 8.592,
+    "year": 2025
+   }
+  },
+  "THA": {
+   "gdpNominal": {
+    "value": 0.57701,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 1.88003,
+    "year": 2025
+   },
+   "growth": {
+    "value": 2.4,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 5.984,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 455000,
+    "year": 2020
+   },
+   "population": {
+    "value": 71.62,
+    "year": 2025
+   }
+  },
+  "TJK": {
+   "gdpNominal": {
+    "value": 0.01766,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.06389,
+    "year": 2025
+   },
+   "growth": {
+    "value": 8.4,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 0.247,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 17000,
+    "year": 2020
+   },
+   "population": {
+    "value": 10.787,
+    "year": 2025
+   }
+  },
+  "TLS": {
+   "gdpNominal": {
+    "value": 0.0019,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.00682,
+    "year": 2025
+   },
+   "growth": {
+    "value": 7.0,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 0.048,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 2000,
+    "year": 2020
+   },
+   "population": {
+    "value": 1.419,
+    "year": 2025
+   }
+  },
+  "TUN": {
+   "gdpNominal": {
+    "value": 0.0575,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.18811,
+    "year": 2025
+   },
+   "growth": {
+    "value": 2.5,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 1.485,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 48000,
+    "year": 2020
+   },
+   "population": {
+    "value": 12.349,
+    "year": 2025
+   }
+  },
+  "TUR": {
+   "gdpNominal": {
+    "value": 1.59729,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 3.88931,
+    "year": 2025
+   },
+   "growth": {
+    "value": 3.6,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 29.987,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 512000,
+    "year": 2020
+   },
+   "population": {
+    "value": 85.879,
+    "year": 2025
+   }
+  },
+  "TZA": {
+   "gdpNominal": {
+    "value": 0.09014,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.3056,
+    "year": 2025
+   },
+   "growth": {
+    "value": 5.9,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 1.03,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 28000,
+    "year": 2020
+   },
+   "population": {
+    "value": 70.546,
+    "year": 2025
+   }
+  },
+  "UGA": {
+   "gdpNominal": {
+    "value": 0.06199,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.17921,
+    "year": 2025
+   },
+   "growth": {
+    "value": 6.3,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 1.297,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 46000,
+    "year": 2020
+   },
+   "population": {
+    "value": 51.385,
+    "year": 2025
+   }
+  },
+  "UKR": {
+   "gdpNominal": {
+    "value": 0.21423,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.69045,
+    "year": 2025
+   },
+   "growth": {
+    "value": 1.8,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 84.109,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 298000,
+    "year": 2020
+   },
+   "population": {
+    "value": 38.98,
+    "year": 2025
+   }
+  },
+  "URY": {
+   "gdpNominal": {
+    "value": 0.08535,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.12968,
+    "year": 2025
+   },
+   "growth": {
+    "value": 1.8,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 1.954,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 22000,
+    "year": 2020
+   },
+   "population": {
+    "value": 3.385,
+    "year": 2025
+   }
+  },
+  "USA": {
+   "gdpNominal": {
+    "value": 30.7697,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 30.7697,
+    "year": 2025
+   },
+   "growth": {
+    "value": 2.2,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 954.387,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 1395000,
+    "year": 2020
+   },
+   "population": {
+    "value": 341.785,
+    "year": 2025
+   }
+  },
+  "UZB": {
+   "gdpNominal": {
+    "value": 0.14704,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.50397,
+    "year": 2025
+   },
+   "growth": {
+    "value": 7.7,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 1.44,
+    "year": 2018
+   },
+   "activeForces": {
+    "value": 68000,
+    "year": 2020
+   },
+   "population": {
+    "value": 37.053,
+    "year": 2025
+   }
+  },
+  "VEN": {
+   "gdpNominal": {
+    "value": 0.09966,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.62114,
+    "year": 2011
+   },
+   "growth": {
+    "value": 1.6,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 2.128,
+    "year": 2017
+   },
+   "activeForces": {
+    "value": 343000,
+    "year": 2020
+   },
+   "population": {
+    "value": 28.517,
+    "year": 2025
+   }
+  },
+  "VNM": {
+   "gdpNominal": {
+    "value": 0.5147,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 1.83776,
+    "year": 2025
+   },
+   "growth": {
+    "value": 8.0,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 10.487,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 522000,
+    "year": 2020
+   },
+   "population": {
+    "value": 101.599,
+    "year": 2025
+   }
+  },
+  "ZAF": {
+   "gdpNominal": {
+    "value": 0.42718,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 1.02985,
+    "year": 2025
+   },
+   "growth": {
+    "value": 1.1,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 3.174,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 89000,
+    "year": 2020
+   },
+   "population": {
+    "value": 64.747,
+    "year": 2025
+   }
+  },
+  "ZMB": {
+   "gdpNominal": {
+    "value": 0.02888,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.09597,
+    "year": 2025
+   },
+   "growth": {
+    "value": 3.8,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 0.406,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 16000,
+    "year": 2020
+   },
+   "population": {
+    "value": 21.914,
+    "year": 2025
+   }
+  },
+  "ZWE": {
+   "gdpNominal": {
+    "value": 0.05122,
+    "year": 2025
+   },
+   "gdpPPP": {
+    "value": 0.10968,
+    "year": 2025
+   },
+   "growth": {
+    "value": 8.1,
+    "year": 2025
+   },
+   "milBudget": {
+    "value": 0.16,
+    "year": 2025
+   },
+   "activeForces": {
+    "value": 51000,
+    "year": 2020
+   },
+   "population": {
+    "value": 16.951,
+    "year": 2025
+   }
+  }
+ }
+}

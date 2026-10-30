@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>STRATCOM v4.5 // Modular Geopolitical & Maritime Command</title>
+
+  <!-- Fonts, Leaflet CSS & Keyless MapLibre GL v4 (for 3D Google-Earth Globe View) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" />
+
+  <!-- Tactical HUD Stylesheet -->
+  <link rel="stylesheet" href="./css/hud.css" />
+</head>
+<body>
+
+  <!-- 1. FULL-BLEED GEOSPATIAL CANVAS (2D Leaflet + 3D WebGL Earth Container) -->
+  <div id="map"></div>
+  <div id="globe3d" hidden></div>
+
+  <!-- 2. TOP COMMAND HEADER & THEATER QUICK-JUMP BAR -->
+  <header class="top-command-bar">
+    <div class="brand-cluster">
+      <div class="status-beacon"></div>
+      <div>
+        <div class="brand-title">STRATCOM <span class="brand-ver" id="brandVer">// GEO-OSINT v4.5</span></div>
+        <div class="brand-sub" id="sysClock">UTC 00:00:00 // DIJKSTRA MESH ACTIVE</div>
+      </div>
+    </div>
+
+    <!-- Scrollable Theater Camera Presets -->
+    <nav class="theater-strip" id="theaterBar">
+      <button class="theater-pill active" data-lat="22" data-lng="25" data-z="3">GLOBAL</button>
+      <button class="theater-pill" data-lat="16" data-lng="46" data-z="5">RED SEA / HORMUZ</button>
+      <button class="theater-pill" data-lat="57" data-lng="17" data-z="5">BALTIC</button>
+      <button class="theater-pill" data-lat="18" data-lng="116" data-z="5">TAIWAN / SCS</button>
+      <button class="theater-pill" data-lat="46" data-lng="33" data-z="5">BLACK SEA</button>
+      <button class="theater-pill" data-lat="3" data-lng="101" data-z="6">MALACCA</button>
+      <button class="theater-pill" data-lat="-25" data-lng="20" data-z="4">CAPE / LOBITO</button>
+      <button class="theater-pill" data-lat="-6" data-lng="33" data-z="5">EAST AFRICA</button>
+      <button class="theater-pill" data-lat="-24" data-lng="-64" data-z="4">ANDES / PLATA</button>
+      <button class="theater-pill" data-lat="11.8" data-lng="-1.5" data-z="5">SAHEL / SOL</button>
+      <button class="theater-pill" data-lat="10.6" data-lng="-12.0" data-z="6">ATLANTIC ARC / SOL</button>
+    </nav>
+
+    <!-- Map Layer Toggles & Desktop Blade Collapse -->
+    <div class="header-controls">
+      <button class="layer-chip active" data-layer="graticule" title="Toggle Latitude / Longitude Graticule">GRID</button>
+      <button class="layer-chip active" data-layer="conflicts">CONFLICTS</button>
+      <button class="layer-chip active" data-layer="corridors">LANES</button>
+      <button class="layer-chip active" data-layer="vessels" title="Simulated fleet movements along the lanes (not real positions)">SIM FLEETS</button>
+      <button class="layer-chip active" data-layer="ais" title="Live AIS ship positions from aisstream.io (needs a free key; see the LIVE strip)">LIVE AIS</button>
+      <button class="layer-chip active" data-layer="gdelt" title="GDELT 2.0 events (protest, coercion, assault, fight, mass violence), geocoded from news, last 24 h, every 15 min">GDELT</button>
+      <button class="layer-chip active" data-layer="chokepoints">CHOKEPOINTS</button>
+      <button class="layer-chip active" data-layer="sol" title="Sol solar-resource overlay: corridors, P90 sites, WAPP ground stations">SOLAR</button>
+      <button class="layer-chip" id="btnOpenFeedModal" title="Upload Live OSINT Feed, Domepolitical Stream, or Sovereign Property Node">+ LIVE FEED</button>
+      <button class="layer-chip" id="btnToggleHUD" title="Toggle Fullscreen Map">HUD</button>
+    </div>
+  </header>
+
+  <!-- 3. DESKTOP LEFT BLADE / MOBILE DRAWER VIEW: INTEL, WAR-GAME & ALLIANCES -->
+  <aside class="hud-blade blade-left" id="bladeLeft">
+    <div class="blade-tabs">
+      <button class="blade-tab active" data-left-tab="wargame">WAR-GAME GATES</button>
+      <button class="blade-tab" data-left-tab="conflicts">FLASHPOINTS</button>
+      <button class="blade-tab" data-left-tab="blocs">BLOCS & GDP</button>
+      <button class="blade-tab" data-left-tab="solar">SOLAR</button>
+    </div>
+
+    <!-- Subview A: Chokepoint Blockade Simulator -->
+    <div class="blade-body active" id="view-wargame">
+      <div class="section-banner">
+        <span>STRATEGIC CHOKEPOINT INTERDICTION</span>
+        <span class="banner-actions">
+          <button class="btn-reset btn-live" id="btnLiveGates" title="Restore real-world gate states (curated baseline), escalating any open gate the live RSS/GDELT feeds flag as contested">◉ LIVE</button>
+          <button class="btn-reset btn-dice" id="btnRandomGates" title="Randomize every gate (weighted: mostly open, some contested, a few blockaded)">🎲 RANDOMIZE</button>
+          <button class="btn-reset" id="btnResetGates" title="Set every gate to OPEN (peacetime counterfactual)">ALL OPEN</button>
+        </span>
+      </div>
+      <p class="helper-copy">Toggle gates between <b>OPEN</b>, <b>CONTESTED</b>, and <b>BLOCKADED</b>. Dijkstra pathfinding automatically reroutes global trade and recalculates risk. <b>◉ LIVE</b> returns to real-world conditions.</p>
+      <div class="random-note" id="gateRandomNote" hidden></div>
+      <div id="chokepointList" class="stack-list"></div>
+    </div>
+
+    <!-- Subview B: Active Military Flashpoints + Live OSINT / Domepolitical / Sovereign Feeds -->
+    <div class="blade-body" id="view-conflicts">
+      <div class="section-banner">
+        <span>ACTIVE KINETIC &amp; LIVE FEEDS</span>
+        <span class="banner-actions">
+          <button class="btn-reset btn-dice" id="btnAddFeedInline" title="Add Live RSS Feed, Domepolitical Alert, Camera Stream or Sovereign Property">+ UPLOAD / NODE</button>
+          <button class="btn-reset" id="btnForceSyncOsint" title="Force refresh live RSS & GDELT OSINT feeds">↻ SYNC</button>
+          <span class="badge-live" id="theaterCount">— THEATERS</span>
+        </span>
+      </div>
+      <div id="conflictList" class="stack-list"></div>
+    </div>
+
+    <!-- Subview C: Alliance & Economic Blocs -->
+    <div class="blade-body" id="view-blocs">
+      <div class="section-banner">
+        <span>ALLIANCES & ECONOMIC COMMUNITIES</span>
+      </div>
+      <div id="blocTelemetry" class="telemetry-card"></div>
+      <div id="blocGrid" class="bloc-grid"></div>
+    </div>
+
+    <!-- Subview D: Sol solar-resource corridors (read-only GeoJSON export from Sol) -->
+    <div class="blade-body" id="view-solar">
+      <div class="section-banner">
+        <span>SOLAR RESOURCE // SOL CORRIDORS</span>
+        <span class="banner-actions">
+          <button class="btn-reset" id="btnReloadSol" title="Reload the newest Sol GeoJSON export">↻ RELOAD</button>
+        </span>
+      </div>
+      <div id="solPanel" class="stack-list"></div>
+    </div>
+  </aside>
+
+  <!-- 4. DESKTOP RIGHT BLADE: CORRIDOR CHEMISTRY & NATION DOSSIER -->
+  <aside class="hud-blade blade-right" id="bladeRight">
+    <div class="blade-tabs">
+      <button class="blade-tab active" data-right-tab="chemistry">CORRIDOR CHEMISTRY</button>
+      <button class="blade-tab" data-right-tab="dossier">NATION DOSSIER</button>
+    </div>
+
+    <!-- Subview A: Trading Corridor Chemistry & Dijkstra Telemetry -->
+    <div class="blade-body active" id="view-chemistry">
+      <div class="pair-selectors">
+        <div class="select-box">
+          <label>ORIGIN NODE</label>
+          <select id="selOrigin"></select>
+        </div>
+        <div class="pair-buttons">
+          <button class="btn-swap" id="btnSwapPair" title="Swap Nodes">⇄</button>
+          <button class="btn-swap" id="btnRandomPair" title="Random corridor">🎲</button>
+        </div>
+        <div class="select-box">
+          <label>DESTINATION NODE</label>
+          <select id="selDest"></select>
+        </div>
+      </div>
+
+      <div class="preset-bar" id="presetBar"></div>
+      <div id="chemistryOutput"></div>
+    </div>
+
+    <!-- Subview B: Nation Dossier & World Bank Live Sparkline -->
+    <div class="blade-body" id="view-dossier">
+      <div class="select-box mb-8">
+        <label for="dossierSearch">SEARCH NATIONS</label>
+        <input id="dossierSearch" class="search-input" type="search" placeholder="Type a name or code, e.g. Ghana, GHA" autocomplete="off" />
+        <div id="dossierResults" class="search-results" hidden></div>
+      </div>
+      <div class="select-box mb-8">
+        <label for="selDossierNation">OR BROWSE BY REGION</label>
+        <select id="selDossierNation"></select>
+      </div>
+      <div id="dossierOutput"></div>
+    </div>
+  </aside>
+
+  <!-- 5. FLOATING KINEMATIC TIME-WARP, VESSEL CLASS & LIVE CURSOR GEODESIC BAR -->
+  <div class="kinematic-bar" id="kinematicBar">
+    <div class="kin-group">
+      <span class="kin-label">SIM SPEED</span>
+      <button class="kin-btn" data-speed="0">PAUSE</button>
+      <button class="kin-btn active" data-speed="1">1x</button>
+      <button class="kin-btn" data-speed="15">15x</button>
+      <button class="kin-btn" data-speed="45">45x</button>
+    </div>
+    <div class="kin-divider"></div>
+    <div class="kin-group">
+      <span class="kin-label">VESSEL KTS</span>
+      <select id="selVesselKts" class="kin-select">
+        <option value="14">14 kts (VLCC Tanker / Bulk)</option>
+        <option value="18" selected>18 kts (ULCV Container)</option>
+        <option value="22">22 kts (Fast Sealift / Ro-Ro)</option>
+      </select>
+    </div>
+    <div class="kin-divider"></div>
+    <div class="kin-group">
+      <span class="kin-label">LIVE</span>
+      <span id="liveStrip"><span class="kin-coords" style="color:#64748b;">connecting…</span></span>
+    </div>
+    <div class="kin-divider"></div>
+    <div class="kin-group">
+      <span class="kin-label">GEODESIC CURSOR</span>
+      <span id="cursorCoords" class="kin-coords">22.00°N, 025.00°E</span>
+    </div>
+  </div>
+
+  <!-- 6. LIVE FEED / SOVEREIGN NODE UPLOADER & STREAM MODAL -->
+  <div class="stratcom-modal-backdrop" id="feedModalBackdrop" hidden>
+    <div class="stratcom-modal">
+      <div class="section-banner" style="margin-bottom:10px;">
+        <span>LIVE FEED UPLOADER &amp; SOVEREIGN NODE REGISTRY</span>
+        <button class="btn-reset" id="btnCloseFeedModal">✕ CLOSE</button>
+      </div>
+
+      <div class="modal-tabs">
+        <button class="modal-tab active" data-mod-tab="sovereign">SOVEREIGN SITE / HQ</button>
+        <button class="modal-tab" data-mod-tab="rss">LIVE RSS / NEWS SOURCE</button>
+        <button class="modal-tab" data-mod-tab="file">GEOJSON / CSV / STREAM</button>
+      </div>
+
+      <!-- Tab 1: Add Sovereign Property / Home HQ / Site of Operation (Wires into Dijkstra!) -->
+      <div class="modal-pane active" id="mod-pane-sovereign">
+        <p class="helper-copy">Register your own Home HQ, global living quarters, or operational sites. Each site is automatically wired into the Dijkstra trade network so you can compute exact <b>$/tonne</b> freight to/from any nation or port, and attach live camera/telemetry streams.</p>
+        <div class="modal-form-grid">
+          <div class="select-box">
+            <label>SITE DESIGNATION</label>
+            <input id="sovName" class="search-input" type="text" placeholder="e.g. Seven Valleys Home HQ / Accra Site" />
+          </div>
+          <div class="select-box">
+            <label>HOST NATION (ISO3 FOR MACRO)</label>
+            <input id="sovHost" class="search-input" type="text" value="USA" maxlength="3" placeholder="USA, GHA, ZWE..." />
+          </div>
+          <div class="select-box">
+            <label>LATITUDE (°N / -°S)</label>
+            <input id="sovLat" class="search-input" type="number" step="0.0001" value="39.8534" />
+          </div>
+          <div class="select-box">
+            <label>LONGITUDE (°E / -°W)</label>
+            <input id="sovLng" class="search-input" type="number" step="0.0001" value="-76.7686" />
+          </div>
+          <div class="select-box" style="grid-column:1 / -1;">
+            <label>LIVE CAMERA / HLS (.M3U8) / MP4 / TELEMETRY LINK (OPTIONAL)</label>
+            <input id="sovStream" class="search-input" type="text" placeholder="http://.../stream.m3u8, local webcam/ESP32 URL, or dashboard link" />
+          </div>
+          <div class="select-box" style="grid-column:1 / -1;">
+            <label>TACTICAL / OPERATIONAL NOTES</label>
+            <input id="sovNotes" class="search-input" type="text" placeholder="Primary residence command terminal, perimeter sensors, or microgrid site" />
+          </div>
+        </div>
+        <button class="preset-chip active-cta" id="btnSaveSovereignSite" type="button">◆ REGISTER SOVEREIGN NODE IN DIJKSTRA MESH</button>
+      </div>
+
+      <!-- Tab 2: Add Live RSS / Media / Domepolitical News Source -->
+      <div class="modal-pane" id="mod-pane-rss" hidden>
+        <p class="helper-copy">Add any RSS/Atom news feed (Economic, Military, Financial, Geopolitical, or "Domepolitical" domestic/grid/infrastructure). The backend classifies and plots matching dispatches automatically.</p>
+        <div class="modal-form-grid">
+          <div class="select-box">
+            <label>SOURCE LABEL</label>
+            <input id="rssName" class="search-input" type="text" placeholder="e.g. EIA ENERGY / DOMESTIC GRID / FINANCIAL" />
+          </div>
+          <div class="select-box">
+            <label>DOMAIN CATEGORY</label>
+            <select id="rssCategory" class="search-input">
+              <option value="DOMEPOLITICAL">DOMEPOLITICAL (Domestic / Grid / Property)</option>
+              <option value="GEOPOLITICAL">GEOPOLITICAL (Diplomacy / Sovereignty)</option>
+              <option value="ECONOMIC">ECONOMIC &amp; FINANCIAL (Markets / Debt / Trade)</option>
+              <option value="MILITARY">MILITARY &amp; NAVAL (Kinetic / Fleet)</option>
+              <option value="FREIGHT">FREIGHT &amp; SUPPLY CHAIN (Ports / Tonnage)</option>
+            </select>
+          </div>
+          <div class="select-box" style="grid-column:1 / -1;">
+            <label>RSS / ATOM XML FEED URL</label>
+            <input id="rssUrl" class="search-input" type="url" placeholder="https://..." />
+          </div>
+          <div class="select-box">
+            <label>DEFAULT LAT (IF UNCLASSIFIED)</label>
+            <input id="rssLat" class="search-input" type="number" step="0.01" value="39.85" />
+          </div>
+          <div class="select-box">
+            <label>DEFAULT LNG (IF UNCLASSIFIED)</label>
+            <input id="rssLng" class="search-input" type="number" step="0.01" value="-76.76" />
+          </div>
+        </div>
+        <button class="preset-chip active-cta" id="btnSaveRssFeed" type="button">📡 SUBSCRIBE &amp; INGEST LIVE RSS WIRE</button>
+      </div>
+
+      <!-- Tab 3: Upload GeoJSON / CSV or Pin Custom Live Event / Video Stream -->
+      <div class="modal-pane" id="mod-pane-file" hidden>
+        <p class="helper-copy">Drop a <b>.geojson</b> or <b>.csv</b> file (with <code>lat,lng,title,category</code> columns) to plot custom intelligence points immediately.</p>
+        <div class="select-box" style="margin-bottom:10px;">
+          <label>SELECT .GEOJSON, .JSON OR .CSV FILE</label>
+          <input id="feedFileInput" class="search-input" type="file" accept=".geojson,.json,.csv" />
+        </div>
+        <button class="preset-chip active-cta" id="btnUploadFeedFile" type="button">📂 PARSE &amp; PLOT TELEMETRY FILE</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 7. MOBILE 3-SNAP BOTTOM SHEET & THUMB DOCK (< 1024px) -->
+  <section class="mobile-sheet" id="mobileSheet" data-snap="collapsed">
+    <div class="sheet-grabber" id="sheetGrabber">
+      <div class="grabber-pill"></div>
+      <div class="sheet-header-row">
+        <span id="mobileSheetTitle">CORRIDOR CHEMISTRY</span>
+        <div class="snap-controls">
+          <button class="snap-btn" data-target-snap="split">SPLIT</button>
+          <button class="snap-btn" data-target-snap="full">FULL</button>
+          <button class="snap-btn" data-target-snap="collapsed">✕</button>
+        </div>
+      </div>
+    </div>
+    <div class="sheet-content" id="mobileSheetContent"></div>
+  </section>
+
+  <nav class="mobile-dock" id="mobileDock">
+    <button class="dock-btn active" data-mob-panel="map">
+      <span class="dock-ico">🌐</span><span>MAP ONLY</span>
+    </button>
+    <button class="dock-btn" data-mob-panel="chemistry">
+      <span class="dock-ico">⚡</span><span>CHEMISTRY</span>
+    </button>
+    <button class="dock-btn" data-mob-panel="wargame">
+      <span class="dock-ico">⚓</span><span>WAR-GAME</span>
+    </button>
+    <button class="dock-btn" data-mob-panel="dossier">
+      <span class="dock-ico">📊</span><span>DOSSIER</span>
+    </button>
+    <button class="dock-btn" data-mob-panel="conflicts">
+      <span class="dock-ico">🎯</span><span>INTEL</span>
+    </button>
+    <button class="dock-btn" data-mob-panel="blocs">
+      <span class="dock-ico">🤝</span><span>BLOCS</span>
+    </button>
+    <button class="dock-btn" data-mob-panel="solar">
+      <span class="dock-ico">☀</span><span>SOLAR</span>
+    </button>
+  </nav>
+
+  <!-- External Leaflet JS, MapLibre GL JS (for 3D Globe) + Modular ES6 Entrypoint -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+  <script type="module" src="./js/main.js?v=4.5.1"></script>
+</body>
+</html>
