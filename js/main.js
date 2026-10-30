@@ -152,6 +152,7 @@ function initMap() {
   const updateZoomLOD = () => {
     document.getElementById('map').classList.toggle('zoom-low', map.getZoom() <= 3);
     renderTacticalGraticule();
+    renderChokepointMarkers();   /* gates first: nation pills then avoid their labels */
     if (Object.keys(GRAPH_NODES).length && state.layers.nations) renderNationNodes();
   };
   map.on('zoomend', updateZoomLOD);
@@ -476,16 +477,36 @@ function feedHitsForGate(gateId) {
   return state.osintEvents.filter(ev => ev.gate === gateId).length;
 }
 
+/* Screen boxes of the gate labels that got a full label this zoom; nation
+   pills avoid them too. Recomputed on every zoom (pans don't change overlap). */
+let gateBoxes = [];
+const GATE_RANK = { blockaded: 0, contested: 1, open: 2 };
+
 function renderChokepointMarkers() {
   state.layers.chokepoints.clearLayers();
-  CHOKEPOINTS.forEach(cp => {
+  gateBoxes = [];
+  const z = map ? map.getZoom() : 4;
+  /* blockaded and contested gates claim their label space first */
+  const ordered = [...CHOKEPOINTS].sort((a, b) => (GATE_RANK[a.state] ?? 3) - (GATE_RANK[b.state] ?? 3));
+  ordered.forEach(cp => {
+    let full = true;
+    if (map) {
+      const pt = map.latLngToContainerPoint([cp.lat, cp.lng]);
+      const w = Math.max(90, 30 + cp.shortName.length * 6.5 + (z <= 3 ? 0 : 10 + cp.state.length * 6.5));   /* the label box is never narrower than its 90px icon */
+      const box = { x1: pt.x - w / 2, x2: pt.x + w / 2, y1: pt.y - 10, y2: pt.y + 10 };
+      full = !gateBoxes.some(p => box.x1 < p.x2 + 2 && box.x2 > p.x1 - 2 && box.y1 < p.y2 + 1 && box.y2 > p.y1 - 1);
+      if (full) gateBoxes.push(box);
+    }
+    const cls = `gate-marker ${cp.state}${cp.kind === 'border' ? ' border-gate' : ''}${full ? '' : ' gate-compact'}`;
     const icon = L.divIcon({
       className: '',
-      html: `<div class="gate-marker ${cp.state}${cp.kind === 'border' ? ' border-gate' : ''}" title="${cp.name}: Click to cycle state">
+      html: full
+        ? `<div class="${cls}" title="${cp.name}: Click to cycle state">
         ⚓ <span>${cp.shortName}</span> <span class="gate-label-text">[${cp.state.toUpperCase()}]</span>
-      </div>`,
-      iconSize: [90, 20],
-      iconAnchor: [45, 10]
+      </div>`
+        : `<div class="${cls}" title="${cp.name} [${cp.state.toUpperCase()}]: Click to cycle state">⚓</div>`,
+      iconSize: full ? [90, 20] : [20, 20],
+      iconAnchor: full ? [45, 10] : [10, 10]
     });
 
     const m = L.marker([cp.lat, cp.lng], { icon }).addTo(state.layers.chokepoints);
@@ -533,7 +554,7 @@ function renderNationNodes() {
   const budget = z >= 4 ? Infinity : (LABELS_BY_ZOOM[z] ?? LABELS_BY_ZOOM[2]);
   const forced = new Set([state.originId, state.destId, state.dossierId, ...getSiteHosts()]);
   const placed = [];
-  const overlaps = b => placed.some(p => b.x1 < p.x2 + 3 && b.x2 > p.x1 - 3 && b.y1 < p.y2 + 2 && b.y2 > p.y1 - 2);
+  const overlaps = b => [...placed, ...gateBoxes].some(p => b.x1 < p.x2 + 3 && b.x2 > p.x1 - 3 && b.y1 < p.y2 + 2 && b.y2 > p.y1 - 2);
 
   placementOrder().forEach((n, rank) => {
     const inActiveBloc = !!(state.activeBloc && n.blocs.includes(state.activeBloc));
